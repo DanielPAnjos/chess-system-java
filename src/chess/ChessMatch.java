@@ -22,6 +22,7 @@ public class ChessMatch {
 	private boolean check;
 	private boolean checkMate;
 	private ChessPiece enPassantVulnerable;
+	private ChessPiece promoted;
 
 	private List<Piece> piecesOnTheBoard = new ArrayList<>();
 	private List<Piece> capturedPieces = new ArrayList<>();
@@ -51,6 +52,10 @@ public class ChessMatch {
 
 	public ChessPiece getEnPassantVulnerable() {
 		return enPassantVulnerable;
+	}
+	
+	public ChessPiece getPromoted() {
+		return promoted;
 	}
 
 	public ChessPiece[][] getPieces() {
